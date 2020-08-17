@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tomisin</title>
+
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -16,15 +19,20 @@
             <div class="heading">
                 <h2 class="">Tomisin Ajayi</h2>
                 <h4 class="">A passionate Front-end Web Developer.</h4>
+                <span class="navbar-text"> <b>Contact:</b>
+                    <a href="https://twitter.com/tomiajayi_" style="margin-left:4px;margin-right:4px;color:#007bff"><i class="fab fa-twitter"></i></a> 
+                    <a href="https://github.com/TomisinAjayi" style="margin-left:4px;margin-right:4px;color:#007bff"><i class="fab fa-github"></i></a> 
+                </span>
             </div>
-            <hr style="background-color:white;">
+            <hr style="background-color:#007bff;">
             <div class="middlebody">
                 <div class="row">
                     <div class="col-md-6">
                         <h2 class="" style="text-align:center;padding-bottom:20px;">About Me</h2>
                         <p class=""> I'm a front-end developer in Lagos,Nigeria.<br >
-                            I enjoy turning complex problems into simple, beautiful and intuitive designs. I have a passion for web design and love to create for web and mobile devices. I know how to create your website to run across devices using the latest technologies available.
-                            I find interest in playing video games, visiting new environments with friends and watching TV.
+                            I am a student in University of Lagos.
+                            I enjoy turning complex problems into simple, beautiful and intuitive designs. I have a passion for web design and love to create for web and mobile devices. I know how to create your website to run across devices using the latest technologies available. <br>
+                            I imagine myself as Rick Sanchez sometimes. I find interest in playing video games, anything fiction and watching anime and movies.
                         </p>
                     </div>
                     <div class="col-md-6">
@@ -47,26 +55,29 @@
                         </table>
                     </div>
                 </div>
+                <!-- <hr style="background-color:#007bff;"> --> 
             </div>
-            <hr style="background-color:white;">
+            <hr style="background-color:#007bff;">
             <div class="contactbody">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form action="index.html" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name" id="exampleInputName" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" placeholder="Your Name" id="inputName" aria-describedby="emailHelp">
+                                <small id="errormsg" style="font-size:11px;color:red;display:none">Name is required!</small>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email" id="exampleInputEmail" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" placeholder="Your Email" id="inputEmail" aria-describedby="emailHelp">
+                                <small id="errormsg" style="font-size:11px;color:red;display:none">Email is required!</small>
                             </div>
                             <div class="form-group">
-                                <input type="phone" class="form-control" placeholder="Your Phone" id="exampleInputPhone">
+                                <input type="phone" class="form-control" placeholder="Your Phone" id="inputPhone">
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" style="height:200px;" placeholder= "Leave A Message" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                            <button type="submit" class="btn btn-primary" id="submit" onclick="validateForm()">SEND MESSAGE</button>
                         </form>
                     </div>
                     <div class="col-md-6" id="right-contact">
@@ -77,6 +88,10 @@
                         <p class="contact-note">(+234)-905-874-2317</p>
                         <p class="contact-head">ADDRESS</p>
                         <p class="contact-note">Hogan-Bassey cr., Surulere, Lagos.</p>
+                        <span class="navbar-text"> 
+                            <a href="https://twitter.com/tomiajayi_"><i class="fab fa-twitter"></i></a> 
+                            <a href="https://github.com/TomisinAjayi"><i class="fab fa-github"></i></a> 
+                        </span>
                     </div>
                 </div>
             </div>
