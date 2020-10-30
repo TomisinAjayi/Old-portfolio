@@ -72,6 +72,9 @@
 #graph #js {
     left: 200px;
 }
+#graph #php {
+    left: 300px;
+}
 #graph tbody th {
     bottom: -1.75em; 
     vertical-align:top;
@@ -88,6 +91,12 @@
     margin: 5px 0 0;
     padding: 0;
     color: black;
+}
+.col-md-4:hover {
+    opacity: #007bff;
+}
+#colorgame_style {
+    padding: 21px 9px;
 }
 #right-contact {
     padding-left: 20px;
