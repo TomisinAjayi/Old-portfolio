@@ -11,6 +11,9 @@ nav {
     margin-right: auto;
     margin-left: auto;
     background-color: #ec566f;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 .btn {
     text-align: right;
@@ -68,6 +71,7 @@ nav > .row > div > button > i {
     background-color: #f98397f7;
     padding: 3rem 6rem;
     color: white;
+    margin-top: 57.5px;
 }
 .lead {
     font-size: 1.25rem;
