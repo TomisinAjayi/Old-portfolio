@@ -159,7 +159,43 @@ nav > .row > div > button > i {
 }
 .col-4 > ul > li> i {
     margin-right: 1rem;
-    color: #f98397f7;;
+    color: #f98397f7;
+}
+
+footer {
+    background-color: #f98397f7;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+}
+footer > h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+footer > p {
+    max-width: 780px;
+    margin: 1rem auto;
+}
+footer > p > a {
+    text-decoration: none;
+    color: #fbdce1;
+}
+footer > button {
+    margin-bottom: 3rem;
+    color: white;
+    background-color: #ec566f;
+    font-weight: 500;
+    padding: 0.375rem 1rem;
+    cursor: pointer;
+    border: none;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+.copyright {
+    background-color: #ec566f;
+    padding: 0.5rem 0;
 }
 
 /* responsiveness */
