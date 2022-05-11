@@ -115,14 +115,15 @@
                 </ul>
             </div>
         </div>
-        <form>
+        <form id="contact_form">
             <h3>Get In Touch</h3>
+            <input type="hidden" name="contact_number">
             <p>
-                <input type="text" placeholder="Name"/>
-                <input type="email" placeholder="Email"/>
+                <input type="text" name="user_name" placeholder="Name"/>
+                <input type="email" name="user_email" placeholder="Email"/>
             </p>
             <p> 
-                <textarea rows="10" placeholder="Enter your message"></textarea>
+                <textarea rows="10" name="message" placeholder="Enter your message"></textarea>
             </p>
             <p>
                 <button type="submit">Send It</button>
@@ -137,6 +138,7 @@
         <div class="copyright">Copyright &copy; Tomisin Ajayi, 2022</div>
     </footer>
     <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
