@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -161,7 +164,136 @@ nav > .row > div > button > i {
     margin-right: 1rem;
     color: #f98397f7;
 }
-
+.projects {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #80808017;
+    text-align: center;
+}
+.projects > h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.projects > div {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 25rem;
+}
+.projects > div > li {
+    display: inline-block;
+    padding: 0.275rem 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.projects > div > .list {
+    color: #58677c;
+}
+.projects > #projectList > .active-project {
+    background: #ec566f;
+    color: white;
+}
+.contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #80808017;
+}
+.contact > h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contact-head {
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    text-align: center;
+    width: 50%;
+    margin: 3rem auto;
+    color: #58677c;
+}
+.contact-head > p > a {
+    text-decoration: none;
+    color: #ec566f;
+}
+.contact-head > .socials > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.contact-head > .socials > ul > li {
+    margin-right: 1.5rem;
+}
+.contact-head > .socials > ul > li > a {
+    width: 36px;
+    padding-top: 7px;
+    color: #ec566f;
+    display: inline-block;
+    text-align: center;
+}
+form {
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    text-align: center;
+    width: 50%;
+    margin: 3rem auto;
+}
+form > h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+form > p > input {
+    width: 45%;
+    padding: 0.875rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #434e5e;
+    background-color: #fff;
+    border: 1px solid #b9c1cd;
+    border-radius: 0.25rem;
+}
+form > p > textarea {
+    min-height: calc(1.5em + 0.75rem + 2px);
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    display: block;
+    width: 94.5%;
+    margin-left: .5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #434e5e;
+    background-color: #fff;
+    border: 1px solid #b9c1cd;
+    border-radius: 0.25rem;
+    font-family: inherit;
+}
+form > p > button {
+    min-height: calc(1.5em + 0.75rem + 2px);
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    display: block;
+    width: 98.2%;
+    margin-left: .5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-color: #ec566f;
+    border: 1px solid #ec566f;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    cursor: pointer;
+}
 footer {
     background-color: #f98397f7;
     text-align: center;
@@ -183,7 +315,6 @@ footer > p > a {
 }
 footer > button {
     margin-bottom: 3rem;
-    color: white;
     background-color: #ec566f;
     font-weight: 500;
     padding: 0.375rem 1rem;
@@ -192,6 +323,10 @@ footer > button {
     line-height: 1.5;
     border-radius: 0.25rem;
     font-size: 1rem;
+}
+footer > button > a {
+    color: white;
+    text-decoration: none;
 }
 .copyright {
     background-color: #ec566f;
@@ -222,5 +357,8 @@ footer > button {
     }
     .col-4 > .icon-holder {
         margin-left: 42%;
+    }
+    .projects > div {
+        margin: 2rem;
     }
 }
