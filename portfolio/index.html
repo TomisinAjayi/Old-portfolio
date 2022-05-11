@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomisin Ajayi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63b5006bc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <div class="col-6 socials">
+                    <ul>
+                        <li><a href="https://twitter.com/tomiajayi_"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tomisin-ajayi-494541185/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="mailto:thomieajayi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/TomisinAjayi"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-6 links">
+                    <ul id="linksUl">
+                        <li class="list active"><a href="#">ABOUT</a></li>
+                        <li class="list"><a href="#projects-section">PROJECTS</a></li>
+                        <li class="list"><a href="Tomisin Ajayi CV.pdf">RESUME</a></li>
+                        <li class="list"><a href="#contact-section">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="intro">
+            <div class="lead">Hi, my name is</div>
+            <h2 class="name">Tomisin Ajayi</h2>
+            <div class="bio">I am a full-stack developer who is specialised in frontend and backend development, who also creates mobile applications with React Native. <br/> I am currently taking an Advanced Diploma in Software Engineering course in Aptech. </div>
+            <a href="#contact-section">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
+        </div>
+    </header>
+    <!-- skills section  -->
+    <section class="skills">
+        <div class="skills-intro">
+            <h3>Skills Overview</h3>
+            <div>
+                I have 2 years experience building web applications as an hobby and I would love to work with a team of developers to finish products. Below is a list of my skill sets and tools I use.
+                <br />
+                <a href="Tomisin Ajayi CV.pdf">Check out my online resume.</a>
+            </div>
+        </div>
+        <div class="skills-body">
+            <div class="row">
+                <div class="col-4">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>React.js/Angular.js</li>
+                        <li><i class="fa-solid fa-check"></i>Javascript</li>
+                        <li><i class="fa-solid fa-check"></i>HTML/CSS</li>
+                        <li><i class="fa-solid fa-check"></i>React Native</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Bootstrap</li>
+                        <li><i class="fa-solid fa-check"></i>Figma</li>
+                        <li><i class="fa-solid fa-check"></i>XML</li>
+                        <li><i class="fa-solid fa-check"></i></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="icon-holder">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Java</li>
+                        <li><i class="fa-solid fa-check"></i>C/C#</li>
+                        <li><i class="fa-solid fa-check"></i>PHP</li>
+                        <li><i class="fa-solid fa-check"></i>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects section   -->
+    <section class="projects" id="projects-section">
+        <h3>Projects</h3>
+        <div id="projectList">
+            <li class="list active-project">All</li>
+            <li class="list">React</li>
+            <li class="list">PHP</li>
+            <li class="list">JavaScript</li>
+            <li class="list">React Native</li>
+        </div>
+    </section>
+    <!-- <contact section  -->
+    <section class="contact" id="contact-section">
+        <h3>Contact Me</h3>
+        <div class="contact-head">
+            <p>If you are interested in hiring me to complete your projects, please you can fill the form below or you can check out my socials. Want to know what I can do, kindly see my <a href="#projects-section">projects</a> above and <a href="Tomisin Ajayi CV.pdf">resume</a>.</p>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://twitter.com/tomiajayi_"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tomisin-ajayi-494541185/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:thomieajayi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/TomisinAjayi"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <form id="contact_form">
+            <h3>Get In Touch</h3>
+            <input type="hidden" name="contact_number">
+            <p>
+                <input type="text" name="user_name" placeholder="Name"/>
+                <input type="email" name="user_email" placeholder="Email"/>
+            </p>
+            <p> 
+                <textarea rows="10" name="message" placeholder="Enter your message"></textarea>
+            </p>
+            <p>
+                <button type="submit">Send It</button>
+            </p>
+        </form>
+    </section>
+    <footer>
+        <h3>Interested in hiring me for a project?</h3>
+        <p>Looking for a full-stack developer to build your web or mobile applications
+           You can email me at <a href="mailto:thomieajayi@gmail.com">thomieajayi@gmail.com</a> or visit the <a href="#">contact</a> page</p>
+        <button><a href="#contact-section">Let's Talk <i class="fa-solid fa-paper-plane"></i></a></button>
+        <div class="copyright">Copyright &copy; Tomisin Ajayi, 2022</div>
+    </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
