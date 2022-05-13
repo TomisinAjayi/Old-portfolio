@@ -19,14 +19,13 @@ nav {
     text-align: right;
     padding-top: 0.5rem;
 }
-nav > .row > div > button {
+nav > .row > .btn {
     display: none;
-    padding: 0.2rem;
+    padding: 0.8rem;
     background-color: transparent;
-    border: 1px solid transparent;
     cursor: pointer;
 }
-nav > .row > div > button > i {
+nav > .row > .btn > i {
     font-size: 2rem;
     color: white;
 }
@@ -180,26 +179,88 @@ nav > .row > div > button > i {
     line-height: 1.2;
     margin-bottom: 1rem;
 }
-.projects > div {
+.projects > #projectList {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 2rem 25rem;
 }
-.projects > div > li {
+.projects > #projectList > button {
     display: inline-block;
     padding: 0.275rem 0.875rem;
     border-radius: 4px;
     cursor: pointer;
-}
-.projects > div > .list {
     color: #58677c;
+    border: 0;
+    background-color: transparent;
 }
 .projects > #projectList > .active-project {
     background: #ec566f;
     color: white;
 }
+.project-body {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 11rem;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem;
+    display: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    height: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+.card > .card-img > img {
+    border-radius: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.card > .card-body {
+    padding-bottom: 0;
+    padding: 1rem 1rem;
+}
+.card > .card-body > h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+.card > .card-footer {
+    padding-bottom: 1.5rem;
+
+}
+.card > .card-footer > ul {
+    padding-left: 0;
+    margin: 0;
+}
+.card > .card-footer > ul > li {
+    display: inline-block;
+}
+.card > .card-footer > ul > li > span {
+    display: inline-block;
+    font-size: 0.4em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding: 0.35em 0.7em;
+    padding-bottom: 0.4em;
+    border-radius: 10rem;
+    background-color: #58677c !important;
+}      
+.show {
+    display: block;
+}
+
+  /* contact design  */
 .contact {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -298,6 +359,25 @@ form > p > button {
     font-family: inherit;
     cursor: pointer;
 }
+#contact-success {
+    display: none;
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    text-align: center;
+    width: 50%;
+    margin: 3rem auto;
+}
+#contact-success > p > i {
+    color: #ec566f;
+    font-size: 5rem;
+}
+#contact-success > p {
+    font-size: 1.2rem;
+    line-height: 2.0;
+    margin: 0;
+    padding-bottom: 2rem;
+}
 footer {
     background-color: #f98397f7;
     text-align: center;
@@ -339,14 +419,45 @@ footer > button > a {
 
 /* responsiveness */
 @media only screen and (max-width: 768px) {
-    nav > .row {
+    nav > .nav-item {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
-    nav > .row > div > button {
-        display: flex;
+    /* nav > .nav-item > div {
+        display: block;
+    } */
+    nav > .row > .btn {
+        order: 1;
+        display: block;
+    }
+    #times {
+        display: none;
+    }
+    nav> .nav-item > .links {
+        display: none;
+    }
+    nav > .nav-item > .links > ul {
+        justify-content: end;
+        margin-right: 1rem;
+        display: block;
+        text-align: left;
+        padding: 0;
+    }
+    nav > .nav-item > .links > ul > li {
+        padding: 0.5rem 0;
+    }
+    .col-6 > ul {
+        padding-left: 1.5rem;
+    }
+    .intro {
+        padding: 3rem 2rem;
     }
     .links {
+        order: 3;
+        width: 100%;
+        text-align: center;
         display: none;
     }
     .skills > .skills-intro > div {
@@ -362,7 +473,36 @@ footer > button > a {
     .col-4 > .icon-holder {
         margin-left: 42%;
     }
-    .projects > div {
-        margin: 2rem;
+    .projects > #projectList {
+        margin: 2rem 0;
+    }
+    .project-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem;
+    }
+    .contact-head {
+        width: 70%;
+    }
+    form {
+        width: 70%;
+    }
+    form > p > input {
+        width: 100%;
+        margin-left: 0;
+    }
+    form > p > input[type="text"] {
+        margin-bottom: 1rem;
+    }
+    form > p > textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    form > p > button {
+        width: 107%;
+        margin-left: 0;
+    }
+    footer > p {
+        width: 90%;
     }
 }
