@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <div class="row">
+            <div class="row nav-item" id="navigation">
                 <div class="col-6 socials">
                     <ul>
                         <li><a href="https://twitter.com/tomiajayi_"><i class="fa-brands fa-twitter"></i></a></li>
@@ -20,7 +20,7 @@
                         <li><a href="https://github.com/TomisinAjayi"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-6 links">
+                <div class="col-6 links" id="linkDisplay">
                     <ul id="linksUl">
                         <li class="list active"><a href="#">ABOUT</a></li>
                         <li class="list"><a href="#projects-section">PROJECTS</a></li>
@@ -29,9 +29,8 @@
                     </ul>
                 </div>
                 <div class="btn">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                    <i id="times" class="fa-solid fa-xmark"></i>
                 </div>
             </div>
         </nav>
@@ -73,7 +72,7 @@
                         <li><i class="fa-solid fa-check"></i>Bootstrap</li>
                         <li><i class="fa-solid fa-check"></i>Figma</li>
                         <li><i class="fa-solid fa-check"></i>XML</li>
-                        <li><i class="fa-solid fa-check"></i></li>
+                        <li><i class="fa-solid fa-check"></i>Git</li>
                     </ul>
                 </div>
                 <div class="col-4">
@@ -94,11 +93,120 @@
     <section class="projects" id="projects-section">
         <h3>Projects</h3>
         <div id="projectList">
-            <li class="list active-project">All</li>
-            <li class="list">React</li>
-            <li class="list">PHP</li>
-            <li class="list">JavaScript</li>
-            <li class="list">React Native</li>
+            <button class="list active-project" onclick="filterSelection('all')">All</button>
+            <button class="list" onclick="filterSelection('html/css')">HTML/CSS</button>
+            <button class="list" onclick="filterSelection('react')">React</button>
+            <button class="list" onclick="filterSelection('php')">PHP</button>
+            <button class="list" onclick="filterSelection('javascript')">JavaScript</button>
+            <button class="list" onclick="filterSelection('rNative')">React Native</button>
+        </div>
+        <div class="project-body">
+            <div class="grid-item react html/css">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="car.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>risevest's landing page</b></h4> 
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <span>react</span>
+                            </li>
+                            <li>
+                                <span>html/css</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item php javascript html/css">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="car.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>login/sign up form</b></h4> 
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <span>php</span>
+                            </li>
+                            <li>
+                                <span>mysql</span>
+                            </li>
+                            <li>
+                                <span>html/css</span>
+                            </li>
+                            <li>
+                                <span>javascript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item html/css javascript">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="car.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>f.r.i.e.n.d.s quiz</b></h4> 
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <span>html/css</span>
+                            </li>
+                            <li>
+                                <span>javascript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+            <div class="grid-item rNative html/css">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="car.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>mobile rise login page</b></h4> 
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <span value="reactNative">react native</span>
+                            </li>
+                            <li>
+                                <span value="html/css">html/css</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item html/css javascript">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="car.jpeg" alt="Avatar">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>random number guess game</b></h4> 
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <span>html/css</span>
+                            </li>
+                            <li>
+                                <span>javascript</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- <contact section  -->
@@ -119,16 +227,24 @@
             <h3>Get In Touch</h3>
             <input type="hidden" name="contact_number">
             <p>
-                <input type="text" name="user_name" placeholder="Name"/>
+                <input type="text" name="user_name" placeholder="Name" required/>
                 <input type="email" name="user_email" placeholder="Email"/>
             </p>
             <p> 
-                <textarea rows="10" name="message" placeholder="Enter your message"></textarea>
+                <textarea rows="10" name="message" placeholder="Enter your message" required></textarea>
             </p>
             <p>
                 <button type="submit">Send It</button>
             </p>
         </form>
+        <div id="contact-success">
+            <p>
+                <i class="fa-solid fa-circle-check"></i>
+            </p>
+            <p>
+                Your message has been sent. <br /> You should be contacted shortly. Thank you.
+            </p>
+        </div>
     </section>
     <footer>
         <h3>Interested in hiring me for a project?</h3>
@@ -137,7 +253,7 @@
         <button><a href="#contact-section">Let's Talk <i class="fa-solid fa-paper-plane"></i></a></button>
         <div class="copyright">Copyright &copy; Tomisin Ajayi, 2022</div>
     </footer>
-    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
