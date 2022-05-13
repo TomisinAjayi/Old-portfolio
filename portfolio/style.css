@@ -231,9 +231,15 @@ nav > .row > .btn > i {
     font-size: 1.125rem;
     margin-bottom: 0;
 }
+.card > .card-body > h4 > a {
+    text-decoration: none;
+    color: black;
+}
+.card > .card-body > h4 > a:hover {
+    color: #ec566f;
+}
 .card > .card-footer {
     padding-bottom: 1.5rem;
-
 }
 .card > .card-footer > ul {
     padding-left: 0;
