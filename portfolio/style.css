@@ -70,7 +70,7 @@ nav > .row > .btn > i {
     background-color: #f98397f7;
     padding: 3rem 6rem;
     color: white;
-    margin-top: 57.5px;
+    margin-top: 50.5px;
 }
 .lead {
     font-size: 1.25rem;
@@ -469,15 +469,20 @@ footer > button > a {
     .skills > .skills-intro > div {
         margin: 0 2rem 3rem;
     }
+    .skills-body {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .skills-body > .row {
         flex-direction: column;
     }
     .col-4 {
-        width: 80%;
+        width: 62%;
+        margin: 0 1.7rem;
         margin-bottom: 3rem;
     }
     .col-4 > .icon-holder {
-        margin-left: 42%;
+        /* margin-left: 42%; */
     }
     .projects > #projectList {
         margin: 2rem 0;
@@ -495,18 +500,18 @@ footer > button > a {
     }
     form > p > input {
         width: 100%;
-        margin-left: 0;
+        margin-left: -10px;
     }
     form > p > input[type="text"] {
         margin-bottom: 1rem;
     }
     form > p > textarea {
         width: 100%;
-        margin-left: 0;
+        margin-left: -10px;
     }
     form > p > button {
-        width: 107%;
-        margin-left: 0;
+        width: 109%;
+        margin-left: -10px;
     }
     footer > p {
         width: 90%;
